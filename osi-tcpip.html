@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="../imagens2/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>OSI x TCP/IP</title>
+</head>
+<body>
+<main class="main2">
+    <img src="../imagens2/modelo-OSI-X-TCP-IP(1).jpg" alt="">
+    <section>
+        <h1>Qual a diferença entre o modelo OSI e o TCP/IP?</h1>
+        <p>A diferença entre o modelo OSI e o TCP/IP que o modelo OSI é de base única, um modelo conceitual que serve para criar outros , e o modelo TCP/IP temos na prática , combinando camadas do OSI em uma algumas poucas versões.</p>
+    </section>
+    <section id="sectionOSI">
+        <h2>Modelo OSI</h2>
+        <p>O modelo OSI é um modelo de rede de computadores e significa conexão de sistema aberto . É um modelo conceitual com o objetivo de padronizar a comunicação numa rede. Ele é dividido nas seguintes camadas:</p>
+        <ol>
+            <li>Camada física</li>
+            <li>Camada de rede</li>
+            <li>Camada de enlace de dados</li>
+            <li>Camada de sessão</li>
+            <li>Camada de transporte</li>
+            <li>Camada de aplicação</li>
+            <li>Camada de apresentação</li>
+        </ol>
+        <img src="../imagens2/modeloOSItabela.png" id="tabelaosi">
+        <div class="limpafloat"></div>
+        <h3>Física</h3>
+        <p>Nessa camada temos especificações de transmissão de dados a nível elétrico, de transmissão de bits sem estruturação. É aqui que se fala de cabos de cobre, fibra ótica, adaptadores, etc.</p>
+        <h3>Enlace de dados</h3>
+        <p>Aqui temos uma camada que corrige os erros da camada anterior, podendo controlar e controlar o fluxo de transmissão de dados.</p>
+        <h3>Rede</h3>
+        <p>Essa camada verifica os dados e quem deve quem-los invejosos. Aqui já podemos falar de IP ( internet protocol ), podendo analisar a origem, o destino e definir qual o caminho dos dados.</p>
+        <h3>Transporte</h3>
+        <p>Como o próprio nome já indica, essa camada se refere ao gerenciamento do transporte dos dados, provenientes da camada de rede. Aqui podemos citar o TCP ( protocolo de controle de transmissão ).</p>
+        <h3>Sessão</h3>
+        <p>É nessa camada que estabelecemos comunicação entre computadores, com aplicações diferentes, que passam a ficar sincronizados.</p>
+        <h3>Apresentação</h3>
+        <p>São “traduzidos para um formato em que podem ser usados ​​os dados e transportados para a camada seguinte”.</p>
+        <h3>Aplicação</h3>
+        <p>Finalmente, é na aplicação de dados que são utilizados em aplicações que nós usamos para usar. Aqui você já pode pensar no protocolo HTTP( hypertext transfer protocol ), por exemplo.</p>
+    </section>
+    <section id="sectionTCPIP">
+        <H3>Modelo TCP/IP</H3>
+        <P>Trata-se de um conjunto de protocolos de comunicação entre computadores, e o nome de dois protocolos que já falamos aqui. Esses conjuntos de camadas, basicamente, são divididos em 4 camadas (por vezes divididos em 5 camadas):</P>
+        <ol>
+            <li>Camada de física</li>
+            <li>Camada de rede</li>
+            <li>Camada de transporte</li>
+            <li>Camada de aplicação</li>
+        </ol>
+        <h3>Física</h3>
+        <p>É nesse nível de comunicação que lidamos com comunicação a nível de hardware, sendo ela responsável por endereçar e trabalhar os funções de gerenciamento de tráfego e velocidade.</p>
+
+        <h3>Rede</h3>
+        <p>Aqui os dados são anexados ao IP do computador que os invejosos e do destinatário.</p>
+
+        <p>Na suíte de protocolos para a internet, o IP executa a tarefa básica de levar pacotes de dados da origem para o destino. O protocolo IP pode transmitir para diferentes protocolos de níveis mais altos, esses protocolos são identificados por um único número de protocolo IP.</p>
+
+        <h3>Transporte</h3>
+        <p>Essa camada pode resolver problemas de confiabilidade e também determinaram para qual aplicação eles serão dados.</p>
+
+        <h3>Aplicação</h3>
+        <p>Enfim, na camada de aplicação podemos interagir com os dados que chegam, através de aplicações.</p>
+    </section>
+    <footer id="footerositcpip">
+        <P>Então é isso, veja um pouco de cada modelo para entender a diferença entre os dois. Se você quiser dissecar o que acontece em cada camada de cada modelo, você pode ler o livro Redes de Computadores do Tanenbaum.</P> 
+    </footer>
+</main>
+<i id="menu">
+    <i class='bx bx-menu' id="menuzinho"></i>
+    <header id="barra-cima">
+            <picture id="picture">
+                <img src="../imagens2/logoif4.png" id="logoif4">
+            </picture>
+            <div id="div1">
+                <div><a href="index.html"><span>HOME</span></a></div>
+                <div><a href="sobre.html"><span>SOBRE</span></a></div>
+                <div><span>TRABALHOS</span></div>
+                <div><span>CONTATOS</span></div>
+            </div>
+            <div id="div2">
+                <a href="https://www.facebook.com/ifprbarracao"><i class='bx bxl-facebook-square' id="face"></i></a>
+                <a href="https://www.youtube.com/c/Conex%C3%A3oIFPR"><i class='bx bxl-youtube' id="you"></i></a>
+                <a href="https://www.instagram.com/ifpr.barracao/"><i class='bx bxl-instagram-alt' id="insta"></i></a>
+                <a href="https://web.whatsapp.com/"><i class='bx bxl-whatsapp' id="zap"></i></a>
+            </div>
+    </header>
+</i>
+</body>
+</html>

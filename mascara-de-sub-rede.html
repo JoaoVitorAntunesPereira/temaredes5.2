@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="../imagens2/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Máscara de Sub-Rede</title>
+</head>
+<body id="body1">
+    <main class="main2">
+        <h1>Máscara de Sub-Rede</h1>
+        <h2>Divisão em sub-redes</h2>
+        <p id="mascarasubredep">Há situações em que a rede se torna muito grande para gerenciar e os números de desempenho ficam sempre baixos como resultado do tráfego intenso. Uma das técnicas mais eficazes para resolver este problema de congestionamento de rede é quebrar a rede TCP/IP em pedaços menores, mais fáceis de gerenciar. A prática de dividir a rede é chamada de sub-rede, e uma ferramenta que pode identificar essas diferentes divisões é chamada de calculadora de sub-redes.</p>
+        <img src="../imagens2/mascarasubrede.jpg" id="mascarasubredeimg">
+        <div class="limpafloat"></div>
+        <h2>Necessidade de uma calculadora IPv4 de sub-rede</h2>
+        <p>Cada sub-rede tem um endereço para representá-la e essas sub-redes são interconectadas por meio de um roteador. O roteador precisa de um endereço de rede e de uma máscara de sub-rede para descobrir se o pacote de IP recebido deve ser roteado para uma de suas sub-redes. A realização de cálculos de rede pode ser difícil quando você tem que considerar parâmetros diferentes para saber quantas sub-redes devem existir e quantos hosts devem estar em uma sub-rede.</p>
+
+        <p>A calculadora de sub-redes é uma ferramenta útil para a descoberta do número de sub-redes possíveis para qualquer bloco de endereço de rede. Você pode escolher a combinação de sub-redes e número de hosts por sub-rede que é adequada para a sua rede e obter o intervalo de endereço do host e o endereço de transmissão para qualquer máscara de sub-rede fornecida. Particionar uma rede grande e alocar intervalos de endereços IP para equipes diferentes é uma tarefa que pode ser calculada mentalmente, mas é melhor ter uma opção como uma calculadora de intervalo de IP ou calculadora de máscara de sub-rede para verificar novamente seus cálculos de sub-rede antes de configurá-los no roteador.</p>
+        <h2>Calcular uma máscara de sub-rede</h2>
+        <p>A cada três dígitos presentes na máscara, é feita uma correspondência com uma parte do endereço IP do host.</p>
+        <p>As partes do endereço IP recebem o nome de octetos, pois são formadas por 8 bits cada uma e cada bit terá um valor decimal que corresponde a sua posição. Fácil, né?</p>
+        <p>Como são bits, eles possuem apenas dois estados, sendo 0, que representa o host, e o 1, que representa a rede.</p>
+        <p>A máscara que usamos como exemplo (255.255.255.0) poderia ser representada em número binário como: 11111111.11111111.11111111.0000000.</p>
+        <p>Nos casos onde todos os valores dos bits sejam 1, o valor decimal será 255. Já nos casos onde todos os valores sejam 0, o valor decimal será 0.</p>
+        <p>Desta forma, você poderá calcular e criar máscaras de sub-rede em um ambiente onde seja necessário.</p>
+        <img src="../imagens2/calculosubrede.jpg" alt="">
+    </main>
+    <i id="menu">
+        <i class='bx bx-menu' id="menuzinho"></i>
+        <header id="barra-cima">
+                <picture id="picture">
+                    <img src="../imagens2/logoif4.png" id="logoif4">
+                </picture>
+                <div id="div1">
+                    <div><a href="index.html"><span>HOME</span></a></div>
+                    <div><a href="sobre.html"><span>SOBRE</span></a></div>
+                    <div><span>TRABALHOS</span></div>
+                    <div><span>CONTATOS</span></div>
+                </div>
+                <div id="div2">
+                    <a href="https://www.facebook.com/ifprbarracao"><i class='bx bxl-facebook-square' id="face"></i></a>
+                    <a href="https://www.youtube.com/c/Conex%C3%A3oIFPR"><i class='bx bxl-youtube' id="you"></i></a>
+                    <a href="https://www.instagram.com/ifpr.barracao/"><i class='bx bxl-instagram-alt' id="insta"></i></a>
+                    <a href="https://web.whatsapp.com/"><i class='bx bxl-whatsapp' id="zap"></i></a>
+                </div>
+        </header>
+    </i>
+</body>
+</html>
